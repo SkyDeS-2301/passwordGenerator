@@ -64,7 +64,7 @@ function getPassword( e ) {
 	if ( t.classList.contains( 'hard-btn' ) ) {
 		for ( let i = 0; i < 12; i++ ) {
 			const randomList = Math.floor( Math.random() * 3 );
-			console.log(randomList)
+			console.log( randomList )
 			if ( randomList === 0 ) {
 				fillPassword( letters )
 			}
@@ -85,6 +85,15 @@ function getPassword( e ) {
 
 	function fillPassword( arr ) {
 		const random = getRandomValue( arr.length );
+		if( arr === letters) {
+			const upperOrNot = getRandomValue(2)
+			if(upperOrNot === 1) {
+				password += arr[random].toUpperCase()
+			} else {
+				password += arr[random].toLowerCase()
+			}
+			return
+		}
 		password += arr[random]
 	}
 }
