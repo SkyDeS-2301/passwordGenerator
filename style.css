@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: darkslategrey;
+    min-height: 100vh;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 0;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.control-btn {
+    padding: 10px 25px;
+    border: 2px solid midnightblue;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+
+    transition: all .3s;
+
+    margin-bottom: 50px;
+}
+
+.control-btn:hover {
+    background: midnightblue;
+}
+
+.out {
+    display: grid;
+    gap: 30px;
+}
+
+.out-field {
+    padding: 25px;
+    min-height: 75px;
+    text-align: center;
+    font-size: 32px;
+
+    border: 2px solid midnightblue;
+}
+
+.title {
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: 700;
+}
